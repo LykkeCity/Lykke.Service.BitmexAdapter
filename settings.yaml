@@ -1,0 +1,23 @@
+BitmexAdapterService:
+    Db:
+        LogsConnString:
+            settings-key: BitmexAdapterService-LogsConnString
+            types:
+              - AzureTableStorage
+  Rabbit:
+    ConnectionString:
+      settings-key: ConnectionString
+      types:
+        - RabbitMq
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
+
